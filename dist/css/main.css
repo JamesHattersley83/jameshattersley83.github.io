@@ -1,37 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #202829; }
+
+a {
+  text-decoration: none;
+  text-transform: uppercase; }
 
 .container {
   width: 80%;
   margin: 0 auto;
   text-align: center; }
 
-ul {
-  text-decoration: none;
-  list-style: none; }
-
 #main-nav {
   background: #202829;
-  color: #fff; }
-
-.nav-container {
-  margin: auto;
-  width: 80%;
+  position: sticky;
+  top: 0;
   display: flex;
-  height: 46px;
-  padding: 10px 10px; }
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem; }
+  #main-nav ul {
+    display: flex;
+    list-style: none; }
+    #main-nav ul a {
+      color: #fff;
+      padding: 0.75rem; }
 
-.logo {
-  margin-right: auto; }
-
-.nav-container > li {
-  margin-left: 10px; }
+.logo a {
+  color: #fff; }
+  .logo a i {
+    padding: 0 0.5rem;
+    color: #ba1f31; }
 
 #showcase {
   background: url("../img/cover.jpg") no-repeat center/cover;

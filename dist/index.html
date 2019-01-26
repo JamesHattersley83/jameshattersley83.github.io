@@ -11,44 +11,50 @@
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans"
-      rel="stylesheet"
-    />
     <title>James Hattersley | Full Stack Developer</title>
   </head>
-  <body>
-    <!-- Showcase & Navigation -->
+  <body id="home">
+    <!-- Navigation -->
+    <nav id="main-nav">
+      <p class="logo">
+        <a href="#home"> <i class="fas fa-laptop-code"></i>James Hattersley</a>
+      </p>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Showcase -->
     <header>
-      <nav id="main-nav">
-        <ul class="nav-container">
-          <li class="logo">James Hattersley</li>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-    </header>
-    <section id="showcase">
-      <div class="container">
-        <h1 class="hero-title">Full Stack Developer</h1>
-        <p class="lead">
-          Hi, I'm James and I have a passion for making full stack applications.
-        </p>
-        <div class="social-media-icons">
-            <i class="fab fa-github"></i>
-            <i class="fab fa-free-code-camp"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="far fa-envelope"></i>
-          </ul>
+      <section id="showcase">
+        <div class="container">
+          <h1 class="hero-title">Full Stack Developer</h1>
+          <p class="lead">
+            Hi, I'm James and I have a passion for making full stack
+            applications.
+          </p>
+          <div class="social-media-icons">
+            <ul>
+              <i class="fab fa-github"></i>
+              <i class="fab fa-free-code-camp"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="far fa-envelope"></i>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </header>
     <!-- About -->
-    <section id="about"></section>
+    <section id="about"><h1>About Me</h1></section>
     <!-- Skills -->
+    <section id="skills"><h1>Skills</h1></section>
     <!-- Projects -->
+    <section id="projects"><h1>My Projects</h1></section>
     <!-- Contact -->
+    <section id="contact"><h1>Contact Me</h1></section>
+    <!-- Footer -->
+    <footer><p>&copy 2019 James Hattersley</p></footer>
   </body>
 </html>
