@@ -25,7 +25,7 @@ a {
 // Utility Classes
 
 .container {
-  max-width: 1100px;
+  max-width: 850px;
   margin: auto;
   padding: 0 2rem;
   overflow: hidden;
@@ -33,14 +33,31 @@ a {
 }
 
 .heading {
-  font-size: 2rem;
+  font-size: rem;
   font-weight: 300;
-  margin: 1.2rem 0;
+  margin-top: 2rem;
   line-height: 1.1;
+  text-transform: uppercase;
 }
 
 .text-primary {
   color: $primary-color;
+  text-transform: lowercase;
+}
+
+.light-bg {
+  background: #e3e4e5;
+}
+
+.social-icons {
+  font-size: 3rem;
+  padding: 0 0.75rem;
+}
+
+hr {
+  border: 2px solid $primary-color;
+  width: 100px;
+  margin: 0.8rem auto;
 }
 
 // Navbar
@@ -78,7 +95,6 @@ a {
 
 .logo i {
   padding: 0 0.5rem;
-  color: $primary-color;
 }
 
 // Showcase
@@ -103,6 +119,14 @@ a {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
+
+  .social-icons a {
+    padding: 1rem;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
 }
 
 .hero-title {
@@ -132,12 +156,6 @@ a {
 }
 
 // About
-hr {
-  margin: 0.8rem auto;
-  border: 2px solid $primary-color;
-  width: 100px;
-}
-
 .photo {
   border-radius: 50%;
   width: 200px;
@@ -145,13 +163,15 @@ hr {
 }
 
 // Skills
-#skills {
-  background: #e3e4e5;
+#skills .social-icons i {
+  color: $primary-color;
 }
 
 // Projects
 
 // Contact
+
+// Footer
 footer {
   background: #202829;
   padding: 2rem 0;
@@ -161,7 +181,7 @@ footer {
 
 // Media Queries
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   #main-nav {
     flex-direction: column;
     align-items: center;
@@ -170,5 +190,9 @@ footer {
   #main-nav .logo {
     margin-bottom: 0.5rem;
     text-align: center;
+  }
+
+  #main-nav ul {
+    padding: 0.5rem;
   }
 }
