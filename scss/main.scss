@@ -54,7 +54,7 @@ a {
   padding: 0 0.75rem;
 }
 
-hr {
+.section-hr {
   border: 2px solid $primary-color;
   width: 100px;
   margin: 0.8rem auto;
@@ -168,6 +168,48 @@ hr {
 }
 
 // Projects
+.project-div {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+
+  .project-snapshot {
+  }
+
+  .project-info {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .project-img {
+    width: 400px;
+  }
+
+  .project-title {
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .social-icons i {
+    color: #000;
+    padding: 1.2rem 1.5rem;
+  }
+}
+
+.tech-list {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  justify-content: center;
+}
+
+.tech {
+  margin: 0 1rem;
+  padding: 0.5rem;
+  background: $primary-color;
+  color: #fff;
+}
 
 // Contact
 
