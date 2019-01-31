@@ -79,7 +79,8 @@ a {
 #showcase {
   background: #333 url("../img/cover.jpg") no-repeat center center/cover;
   height: 100vh;
-  color: #fff; }
+  color: #fff;
+  position: relative; }
 
 #showcase .showcase-content {
   display: flex;
