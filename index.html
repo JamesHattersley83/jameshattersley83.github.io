@@ -183,22 +183,32 @@
       <div class="container">
         <h2 class="heading">Contact Me</h2>
         <hr class="section-hr" />
-        <p class="lead">Follow me on social media!</p>
-        <div class="social-icons">
-          <a href="https://github.com/JamesHattersley83" target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a
-            href="https://www.freecodecamp.org/jameshattersley83"
-            target="_blank"
-            ><i class="fab fa-free-code-camp"></i
-          ></a>
-          <a
-            href="https://twitter.com/jameshattersle3?lang=en-gb"
-            target="_blank"
-            ><i class="fab fa-twitter"></i
-          ></a>
-        </div>
+        <p class="lead">Get in touch!</p>
+        <form
+          class="contact"
+          action="https://formspree.io/jameshattersley83@gmail.com"
+          method="POST"
+        >
+          <div class="form-group">
+            <input type="text" name="name" id="name" placeholder="Enter name" />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              name="name"
+              id="message"
+              placeholder="Enter Message"
+            ></textarea>
+          </div>
+          <input type="submit" value="Send" class="btn" />
+        </form>
       </div>
     </section>
     <!-- Footer -->

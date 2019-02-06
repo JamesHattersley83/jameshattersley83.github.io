@@ -23,7 +23,7 @@ a {
 
 .heading {
   font-size: rem;
-  font-weight: 300;
+  font-weight: 800;
   margin-top: 2rem;
   line-height: 1.1;
   text-transform: uppercase; }
@@ -159,11 +159,28 @@ a {
     color: #000;
     padding: 1.2rem 1.5rem; }
 
-#contact .social-icons i {
-  color: #ba1f31;
-  padding-bottom: 2rem; }
-  #contact .social-icons i:hover {
-    color: #202829; }
+.contact {
+  text-align: center;
+  padding-bottom: 2rem;
+  width: 100%; }
+  .contact .form-group {
+    width: 100%;
+    padding: 0.5rem 0; }
+  .contact input,
+  .contact textarea {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border: 1px solid #202829;
+    border-radius: 5px;
+    resize: none; }
+  .contact .btn {
+    border: none;
+    width: 100%;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    background: #ba1f31;
+    color: #fff;
+    text-transform: uppercase; }
 
 footer {
   background: #202829;
