@@ -73,10 +73,16 @@ a {
   width: 100%;
   top: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   z-index: 1;
   padding: 1rem;
+
+  .logo {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
 
   ul {
     display: flex;
@@ -234,18 +240,31 @@ footer {
 
 // Media Queries
 
-@media (max-width: 480px) {
+@media (min-width: 600px) {
   #main-nav {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+
+    .logo {
+      margin-bottom: 0;
+    }
   }
 
-  #main-nav .logo {
-    margin-bottom: 0.5rem;
-    text-align: center;
+  .project-div {
+    flex-direction: row;
+    margin-top: 1rem;
+
+    .project-info {
+      margin-left: 2rem;
+    }
   }
 
-  #main-nav ul {
-    padding: 0.5rem;
+  #skills p {
+    margin-top: 1rem;
+  }
+
+  #skills .skill-icons i {
+    font-size: 4rem;
+    padding: 1rem 0.5rem;
+    color: $primary-color;
   }
 }
