@@ -195,10 +195,9 @@ a {
     padding: 0.5rem 1rem;
     width: 100%;
     border: none;
-    shaborder-radius: 2px;
+    border-radius: 2px;
     resize: none;
-    font-family: "Roboto", sans-serif;
-    -webkit-appearance: none; }
+    font-family: "Roboto", sans-serif; }
   .contact textarea {
     height: 100px; }
 
