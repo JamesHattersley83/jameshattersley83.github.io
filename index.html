@@ -138,7 +138,7 @@
             </ul>
           </div>
         </div>
-        <hr />
+        <hr class="hr-projects" />
         <div class="project-div">
           <div class="project-snapshot">
             <a
@@ -183,14 +183,20 @@
       <div class="container">
         <h2 class="heading">Contact Me</h2>
         <hr class="section-hr" />
-        <p class="lead">Get in touch!</p>
+        <h3 class="heading-small">Get in touch!</h3>
         <form
           class="contact"
           action="https://formspree.io/jameshattersley83@gmail.com"
           method="POST"
         >
           <div class="form-group">
-            <input type="text" name="name" id="name" placeholder="Enter name" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter Name"
+              required
+            />
           </div>
           <div class="form-group">
             <input
@@ -198,6 +204,7 @@
               name="email"
               id="email"
               placeholder="Enter Email"
+              required
             />
           </div>
           <div class="form-group">
